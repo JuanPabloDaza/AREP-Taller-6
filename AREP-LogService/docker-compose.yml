@@ -2,13 +2,26 @@ version: '2'
 
 
 services:
-    web:
-        build:
-            context: .
-            dockerfile: Dockerfile
-        container_name: web
+    web_app:
+        image: juanpablodaza/roundrobinserver
+        container_name: roundrobbinserver
         ports:
-            - "8087:6000"
+            - "36000:4568"
+    web_service:
+        image: juanpablodaza/logservice
+        container_name: logservice1
+        ports:
+            - "36001:4567"
+    web_service:
+        image: juanpablodaza/logservice
+        container_name: logservice2
+        ports:
+            - "36002:4567"
+    web_service:
+        image: juanpablodaza/logservice
+        container_name: logservice3
+        ports:
+            - "36003:4567"
     db:
         image: mongo:3.6.1
         container_name: db

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Servidor AWS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <h1 id="title">Servidor en AWS</h1>
+        <form id="sendWord">
+            <label for="name">Palabra:</label><br>
+            <input type="text" id="word" name="word"><br><br>
+            <input type="button" value="Enviar" onclick="loadGetMsg()">
+        </form> 
+        <ul id="json-list"></ul>
+        <script>
+            function loadGetMsg() {
+                let nameVar = document.getElementById("word").value;
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {
+                    const jsonResponse = JSON.parse(this.responseText);
+                    const stringDateList=[];
+                    jsonResponse.forEach(jsonObject => {
+                        stringDateList.push(jsonObject.date + " - " + jsonObject.string);                        
+                    });
+
+                    const jsonListElement = document.querySelector("#json-list");
+                    jsonListElement.innerHTML = "";
+                    stringDateList.forEach(stringDate => {
+                        const listItemElement = document.createElement("li");
+                        listItemElement.textContent = stringDate;
+                        jsonListElement.appendChild(listItemElement);
+                    });
+                }
+                xhttp.open("GET", "/log?value=" + nameVar);
+                xhttp.send();
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+
+#json-list{
+   align-content: center; 
+   margin: 0 auto;
+   width: 320px;
+   background-color: rgb(178, 247, 247);
+}
+
+#title{
+    width:320px;
+    margin: 0 auto;
+    background: rgb(149, 149, 240);
+    text-align: center;
+}
+
+#sendWord{
+    margin: 0 auto;
+    width: 320px;
+    background: rgb(179, 177, 177);
+    text-align: center;
+}
+
