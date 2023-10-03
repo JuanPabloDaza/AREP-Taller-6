@@ -176,9 +176,9 @@ https://hub.docker.com/repository/docker/juanpablodaza/logservice/general
 
 ## Funcionamiento en AWS:
 
-Se debe crear una instancia de EC2 en AWS e instalar Docker, luego realizar el mismo procedimiento del despliegue local que esta mas en el documento README.<br>
+Se debe crear una instancia de EC2 en AWS e instalar Docker, luego realizar el mismo procedimiento del despliegue local que esta mas arriba en el documento README.<br>
 
-una vez se realice el correcto despliegue de las imagenes podemos acceder a la direccion de la instancia para comprobar el funcionamiento, el siguiente es un video donde se muestra el correcto funcionamiento en una isntancia EC2 de AWS:
+Una vez se realice el correcto despliegue de las imagenes podemos acceder a la direccion de la instancia para comprobar el funcionamiento, el siguiente es un video donde se muestra el correcto funcionamiento en una isntancia EC2 de AWS:
 
 * [Video funcionamiento](https://www.youtube.com/watch?v=vNhncjGQVac)
 
