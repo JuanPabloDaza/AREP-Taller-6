@@ -192,6 +192,8 @@ Una vez se realice el correcto despliegue de las imagenes podemos acceder a la d
 
 * [Docker](https://www.docker.com) - Creacion de imagenes.
 
+* [Miguel Salamanca](https://github.com/miguelsalamanca007/ArepLogService) - Mi compañero me ayudo con la construccion de la conexion a la base de datos y lograr mostrar los datos al usuario.
+
 ## Autor
 
 * Juan Pablo Daza Pinzón
