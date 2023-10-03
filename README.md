@@ -9,6 +9,10 @@ https://github.com/JuanPabloDaza/AREP-Taller-6
 ```
 Luego lo recomendado es usar Docker para utilizar el archivo docker-compose.yml el cual ya contiene la configuracion optima para el uso del servidor.
 
+```
+docker-compose up -d
+```
+
 ## Prerequisitos
 
 Es necesario tener instalado maven para compilar y probar los test del programa, si no se tiene maven puede instalar [aqui](https://maven.apache.org/install.html).
