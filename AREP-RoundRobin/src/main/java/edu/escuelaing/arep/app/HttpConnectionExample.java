@@ -12,9 +12,9 @@ public class HttpConnectionExample {
     private static final String USER_AGENT = "Mozilla/5.0";
     private static final String GET_URL = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=fb&apikey=Q1QZFVJQ21K7C6XM";
     private static final String[] LOG_SERVERS = new String[]{
-                                                            "http://logservice1:4568",
-                                                            "http://logservice2:4568",
-                                                            "http://logservice3:4568"
+                                                            "http://logservice1:4567",
+                                                            "http://logservice2:4567",
+                                                            "http://logservice3:4567"
                                                             };
     private static int currentServer=0;
 
